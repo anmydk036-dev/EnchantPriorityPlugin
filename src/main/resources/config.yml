@@ -1,0 +1,32 @@
+settings:
+  save-interval-seconds: 300
+
+enchantments:
+  infinity_totem:
+    enabled: true
+    scaling-type: COOLDOWN
+    max-priority-positions: 4
+    reset-triggers:
+      on-player-death: false
+      on-season-reset: true
+    tiers:
+      1:
+        unlimited-usage: true
+        cooldown-seconds: 0
+        consume-item: false
+      2:
+        unlimited-usage: false
+        cooldown-seconds: 60
+        consume-item: false
+      3:
+        unlimited-usage: false
+        cooldown-seconds: 180
+        consume-item: false
+      4:
+        unlimited-usage: false
+        cooldown-seconds: 600
+        consume-item: false
+    overflow:
+      unlimited-usage: false
+      cooldown-seconds: 1200
+      consume-item: false
